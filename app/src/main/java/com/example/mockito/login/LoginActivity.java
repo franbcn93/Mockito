@@ -55,8 +55,6 @@ public class LoginActivity extends AppCompatActivity implements Login.View, View
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button:
-
-
                 presenter = new LoginPresenter(this);
                 model = new LoginModel(presenter);
                 //model.validaUser("fran","fr");android studio intent
@@ -67,7 +65,6 @@ public class LoginActivity extends AppCompatActivity implements Login.View, View
                     intent.putExtra("input", getUserName());
                     startActivity(intent);
                 }
-                /**/
                 break;
         }
     }
